@@ -1,0 +1,45 @@
+:root {
+    --font-family: Star Wars, Fantasy;
+    --bg-color: #e0cb97; 
+    --primary-color: #801515;
+    --highlight-color: #D46A6A
+    /* #CAEDFF */
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+
+    min-height: 100vh;
+    display: flex; /* alinhamento dos itens na horizontal */
+    flex-direction: column; /* alinhamento dos itens na vertical */
+    align-items: center; /* alinhamento do conteúdo na horizontal */
+    justify-content: center; /* alinhamento do conteúdo na vertical */
+    text-align: center;
+    margin: 0;
+}
+
+#img-filme {
+    width: 24rem; /* 384px */
+    height: 12rem; /* 192px */
+}
+
+p {
+    margin: 5px;
+    text-align: justify;
+}
+
+#container-filme {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.5rem; /* 40px */
+    justify-content: center;
+    gap: 0.05rem; /* 40px */;
+}
+
+#card-filme {
+    border: 2px solid var(--primary-color);
+    margin: 0.5rem; /* 8px */
+    width: 24rem; /* 384px */
+}
