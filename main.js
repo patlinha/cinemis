@@ -92,13 +92,13 @@ const catalogo = [
     alt="Filme do Circuito Cineclubista de Filmes."
     />
     <p>Título: ${filmeCatalogo.titulo}</p>
+    <p>Data: ${filmeCatalogo.data}</p>
+    <p>Horário: ${filmeCatalogo.horario}</p>
     <p>Direção: ${filmeCatalogo.direcao}</p>
     <p>Ciclo: ${filmeCatalogo.ciclo}</p>
     <p>Curadoria: ${filmeCatalogo.curadoria}</p>
-    <p>Data: ${filmeCatalogo.data}</p>
-    <p>Horário: ${filmeCatalogo.horario}</p>
     <p>Ano: ${filmeCatalogo.ano}</p>
-    <button>Adicionar a Favorito</button>
+    <button>Adicionar a Favorito &#x1F497</button>
     </div>
     `;
   
