@@ -1,7 +1,7 @@
 const catalogo = [
     {
       id: 1,
-      titulo: "ARDIL 22",
+      titulo: "Ardil 22",
       direcao: "Mike Nichols",
       ciclo: "História do cinema – Ciclo anos 1970: O cinema político pelo mundo e a ascensão dos blockbuster estadunidenses",
       curadoria: "Claudia Bortolato",
@@ -87,20 +87,27 @@ const catalogo = [
   
   for (const filmeCatalogo of catalogo) {
     const cartaoFilme = `
-    <div id="card-filme">
-    <img id="img-filme" ${filmeCatalogo.imagem}
-    alt="Filme do Circuito Cineclubista de Filmes."
-    />
-    <p>Título: ${filmeCatalogo.titulo}</p>
-    <p>Data: ${filmeCatalogo.data}</p>
-    <p>Horário: ${filmeCatalogo.horario}</p>
-    <p>Direção: ${filmeCatalogo.direcao}</p>
-    <p>Ciclo: ${filmeCatalogo.ciclo}</p>
-    <p>Curadoria: ${filmeCatalogo.curadoria}</p>
-    <p>Ano: ${filmeCatalogo.ano}</p>
-    <button>Adicionar a Favorito &#x1F497</button>
-    </div>
-    `;
+      <div id="card-filme">
+        <img id="img-filme" ${filmeCatalogo.imagem}
+        alt="Filme do Circuito Cineclubista de Filmes."
+        />
+        <div class="card--titulo-data-hora">
+          <div class="data-horario">
+            <p>${filmeCatalogo.data}</p>
+            <p class="dia-semana">SÁB</p>
+            <p> ${filmeCatalogo.horario}</p>
+          </div>  
+          <p class="titulo-filme">${filmeCatalogo.titulo}</p>
+        </div>
+        <div class="info-geral">
+          <p>Direção: ${filmeCatalogo.direcao}</p>
+          <p>Ciclo: ${filmeCatalogo.ciclo}</p>
+          <p>Curadoria: ${filmeCatalogo.curadoria}</p>
+          <p>Ano: ${filmeCatalogo.ano}</p>
+          <button id="btn-favoritar">Favoritar <i class="fa-regular fa-heart"></i></button>
+        </div>
+      </div>
+      `;
   
     document.getElementById("container-filme").innerHTML += cartaoFilme;
   }

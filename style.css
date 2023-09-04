@@ -1,14 +1,18 @@
 :root {
-    --font-family: Star Wars, Fantasy;
+    /* --font-family: Star Wars, Fantasy; */
     --bg-color: #e0cb97; 
+    --bg-color-transp: #e0cb9785; 
     --primary-color: #801515;
+    --primary-color-transp: #801515d9;
+    --texto-header: #fdfdfd;
+    --shadow-color: #80151513;
     --highlight-color: #D46A6A
     /* #CAEDFF */
 }
 
 body {
     font-family: var(--font-family);
-    background-color: var(--bg-color);
+    background-color: var(--bg-color-transp);
     color: var(--primary-color);
 
     min-height: 100vh;
@@ -22,26 +26,95 @@ body {
 
 header {
     display: flex;
+    justify-content: space-between;
     min-width: 95vw; /*tá ruim... precisa consertar*/
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-transp);
     --tw-shadow-color: #94a3b8;
     box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
     padding-left: 2rem; /* 32px */
     padding-right: 2rem; /* 32px */
     padding-top: 1rem; /* 16px */
     padding-bottom: 1rem; /* 16px */
-    justify-content: space-between;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+header .header-imagem-e-textoLogo {
+    display: flex;
+    color: var(--texto-header);
+}
+
+header .header-texto-logo {
+    padding: 0 0.5rem 0 0.5rem;
+    margin-bottom: 0;
+    /* opacity: 0; */
+    font-size: 0.875rem; /* 14px */
+    line-height: 0.90rem; /* 20px */
+}
+
+header .img-header {
+    /*height: 5rem; /* 80px */
+    height: 3rem; /* 48px */
+    border-radius: 0.5rem 0.5rem 0 0; /* 8px */;
+}
+
+#card-filme .card--titulo-data-hora {
+    display: flex;
+    align-items: center;
+    margin: 0.125rem;
+    padding: 0 0.125rem 0 0.125rem;
+    /*remover depois de finalizado:*/
+    /* background-color: #94a3b8; */
+}
+
+#card-filme .card--titulo-data-hora:hover {
+    cursor: pointer;
+}
+
+#card-filme .titulo-filme {
+    text-align: center;
+    align-self: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+    
+    /*remover depois de finalizado:*/
+    /* background-color: antiquewhite; */
+}
+
+#card-filme .data-horario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.125rem; /* 18px */
+    line-height: 0.55rem; 
+    font-weight: bold;
+    border: solid 0.05rem var(--primary-color-transp);
+    border-radius: 0.25rem; 
+}
+
+#card-filme .info-geral {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
 }
 
 #img-filme {
-    width: 24rem; /* 384px */
-    height: 12rem; /* 192px */
+    align-self: center;
+    width: 20rem; /* 320px */ /*--> antes: 24rem; /* 384px */
+    height: 10rem; /* 160px */ /*antes --> 12rem; /* 192px */
     border-radius: 0.5rem 0.5rem 0 0; /* 8px */;
-    
+    margin-top: 0.75rem; /* 12px */
+    margin-bottom: 0.75rem; /* 12px */
+    border-radius: 0.5rem; /* 8px */
 }
 
-#img-header {
-    height: 5rem; /* 80px */
+#img-filme:hover{
+    transform: scale(1.2);
+    cursor:pointer;
+    transition-duration: 300ms;
 }
 
 p {
@@ -67,9 +140,25 @@ p {
 }
 
 #card-filme {
-    border: 1px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--shadow-color);
     border-radius: 0.75rem; /* 12px */;
     margin: 0.125rem; /* 2px */
     /* margin: 0.5rem; 8px --> fica mais espaçado... verificar*/
     width: 24rem; /* 384px */
+    padding-bottom: 0.5rem; /* 8px */
+    justify-content: space-between;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw-shadow-color: #94a3b8;
+    border-radius: 0.5rem; /* 8px */
+    align-content: center;
+}
+
+#card-filme .titulo-filme:hover {
+    cursor: pointer;
+}
+
+#btn-favoritar {
+    
 }
