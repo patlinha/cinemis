@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>	&#x1F39E Cinemis</title>
+    <title>	&#x1F39E; Cinemis</title>
     <meta name="keywords" content="cinema, cineclube, mis campinas, museu da imagem e do som">
     <meta name="description" content="Confira aqui a programação de cinema cineclubista exibida no Museu da Imagem e do Som de Campinas/SP. Há mais de 30 anos as sessões são propostas por quem frequenta o espaço. Rua Regente Feijó, 859, Campinas/SP.">
     <meta name="author" content="patlinha">
@@ -12,20 +12,18 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <div class="header-imagem-e-textoLogo">
-        <img class="img-header" src="./imagens/logo/logoMIS.png" alt="logo MIS Campinas"/>
-        <p class="header-texto-logo">MIS Campinas:<br>Rua Regente Feijó, 859<br>Centro - Campinas/SP</p>
+    <header id="header-html"></header>
+    <main class="principal">
+      <div id="filtros">
+        <button id="exibir-futuras" class="btn-filtros">Futuras</button>
+        <button id="exibir-sessoes-passadas"  class="btn-filtros">Passadas</button>
+        <button id="exibir-favoritas"  class="btn-filtros">Favoritas</button>
       </div>
-      <div id="header-icones">
-        <button id="fale-conosco"><i class="fa-solid fa-envelope"></i></button>
-        <button class="mr-2"><i class="fa-solid fa-user"></i></button>
-        <button class="mr-2"><i class="fa-solid fa-right-from-bracket"></i></button>
-      </div>
-    </header>
-    <main>
+      <!-- <section id="filtros"></section> -->
       <section id="container-filme"></section>
     </main>
-    <script src="./main.js"></script>
+    <!-- <script src="./main.js"></script> -->
+    <script type="module" src="main.js"></script>
+
   </body>
 </html>
