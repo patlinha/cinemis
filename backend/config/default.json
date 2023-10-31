@@ -1,0 +1,16 @@
+{
+  "database": {
+    "dbConfig": {
+      "host": "localhost",
+      "port": 3306,
+      "dbName": "cinemis",
+      "user": "root",
+      "password": "password",
+      "connectionLimit": 2
+    },
+    "credit": {
+      "initialLimit": 100,
+      "initialDays": 1
+    }
+  }
+}
