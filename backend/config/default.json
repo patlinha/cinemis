@@ -1,0 +1,16 @@
+{
+  "database": {
+    "dbConfig": {
+      "host": "localhost",
+      "port": 3306,
+      "dbName": "cinemis",
+      "user": "root",
+      "password": "Polva2020Unicornio$$$Programadora",
+      "connectionLimit": 2
+    },
+    "credit": {
+      "initialLimit": 100,
+      "initialDays": 1
+    }
+  }
+}
